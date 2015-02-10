@@ -1,0 +1,20 @@
+<html>
+<head>
+<title></title>
+<script src="js1.js"></script>
+</head>
+<body>
+ 
+<input type="button" name="one" value="one" onClick="fun1()"><br><br>
+<input type="button" name="two" value="two" onClick="fun2()"><br>
+
+Product
+<input type="textbox" id="t1">*
+<input type="textbox" id="t2"> = 
+<input type="textbox" id="t3"><br>
+<input type="button" name="two" value="product" onClick="fun3()">
+<input type="button" name="two" value="date" onClick="fun4()">
+<input type="button" name="two" value="formatedDate" onClick="fun5()">
+<div id="show"></div>
+</body>
+</html>

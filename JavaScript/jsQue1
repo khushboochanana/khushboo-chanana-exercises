@@ -1,0 +1,13 @@
+<html>
+<head>
+<title></title>
+<script src="jsque1.js"></script>
+</head>
+<body>
+  <p>Prompt for amount, interest rate and no. of years and calculate simple interest.</p><br>
+<input type="button" name="one" value="SimpleInterst" onClick="si()"><br><br>
+
+<p id= "interst"></p>
+</body>
+</html>
+

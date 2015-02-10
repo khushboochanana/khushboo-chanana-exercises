@@ -1,0 +1,17 @@
+<html>
+<head>
+<title></title>
+<script src="jsque2.js"></script>
+</head>
+<body>
+
+<b> ENTER string</b>
+<input type="textbox" id="t1">
+
+<input type="button" value="check" onClick="checkPalindrome()">
+
+<p id= "show"></p>
+<p id= "show1"></p>
+</body>
+</html>
+

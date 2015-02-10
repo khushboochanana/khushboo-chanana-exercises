@@ -1,0 +1,14 @@
+<html>
+<head>
+<title></title>
+<script src="jsque4.js"></script>
+</head>
+<body>
+  On click of a button ask for the name of user and display it inside the text box<br><br>
+<input type="button" name="display" value="display" onClick="disp()"><br><br>
+<b>Click on button to display name in textbox</b><br><br>
+<input type="textbox" id="t1">
+
+</body>
+</html>
+

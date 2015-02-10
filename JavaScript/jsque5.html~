@@ -1,0 +1,20 @@
+<html>
+<head>
+<title></title>
+<script >
+function copy(val){
+var val=document.getElementById("t1").value;
+alert("value after onchange");
+document.getElementById("t2").value=val;
+
+}
+</script>
+</head>
+<body>
+Copy text of one text field to another on change of text in first text box<br><br>
+
+hellooooooo
+<input type="text" id="t1" value ="" onchange ="copy(this.value)"><br>
+<input type="text" id="t2" >
+</body>
+</html>

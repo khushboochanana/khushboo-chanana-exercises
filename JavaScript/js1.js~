@@ -1,0 +1,33 @@
+function fun1(){
+document.write("hiii");
+alert("ig");
+}
+
+function fun2(){
+alert("ttn");
+}
+
+function fun3(){
+
+var a=document.getElementById("t1").value;
+var b=document.getElementById("t2").value;
+var c;
+
+c=a*b;
+d=a+b;
+
+document.getElementById("t3").value=c;
+document.getElementById("show").innerHTML=d;
+
+
+}
+
+function fun4(){
+document.getElementById("show").innerHTML = Date();
+
+}
+function fun5(){
+var d = new Date();
+var str= d.getDate()+"  "+d.getMonth()+"  "+ d.getFullYear()+ "  "+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+document.getElementById("show").innerHTML =str;
+}

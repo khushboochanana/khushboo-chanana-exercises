@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+	function area(){
+	var a=document.getElementById("t1").value;
+	var area=3.147*a*a;
+	document.getElementById("show").innerHTML=area;
+       }
+</script></head>
+<body>
+
+FIND AREA OF CIRCLE <br>
+
+<b>Enter the radius: </b><input type="textbox" id="t1">
+<input type="button" name="find" value="Area" onClick="area()"><br>
+<b>Area of circle is:</b>
+<div id="show"></div>
+</body>
+</html>
