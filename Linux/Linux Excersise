@@ -1,0 +1,62 @@
+LINUX exercise..
+
+q1. alias list="ls -a" 
+
+q2. ln -s groovy groovy.tar
+
+q3. export GROOVY_HOME=/opt/groovy 
+ export PATH=$PATH:$GROOVY_HOME/bin                               
+
+
+q4. export PATH=${PATH}:~myScripts
+
+q5. sudo apt-get install cheese
+   Reading package lists... Done 
+   Building dependency tree       
+   Reading state information... Done 
+   cheese is already the newest version. 
+   0 upgraded, 0 newly installed, 0 to remove and 466 not upgraded. 
+
+
+
+q6.cat a.txt 
+ intelligrape was established in 2008. 
+  Intelligrape is one of the renowned companies in Software Development. 
+ I ntelligrape is currently having  235 employees 
+ Intelligrape 
+ Intelligrape 
+ Intelli. 
+ grep -cw intelligrape a.txt
+
+q7.
+grep -l "intelligrape"/a/*.txt| wc-l
+
+q8. wc -l a.txt
+
+q9.find . -mtime +1
+
+q10. scp  
+
+q11. vi c.txt(to save and exit :wq)
+
+contents of c1.txt
+
+"This is a sample file,welcome to intelligrape" 
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~                                                                               
+~  
+
+
+
+q12.scp c.txt 
+
+q13. mv html khushboo   //Rename
+
+q14 cp a.txt /tmp/b.txt
+
+q15.  mysql -u root -p igdefault dbEmp.empTable > file.sql
+
