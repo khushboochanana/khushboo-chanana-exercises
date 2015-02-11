@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){
+		$("body").css("background","red");
+	});
+
+$("#b2").click(function(){
+		$("#change").appendTo("#target2");
+
+	});
+	$("#b3").click(function(){
+		$("body").css("color","green ");
+$('p').clone().insertAfter('p');
+	});
+	$("#b4").click(function(){
+		$("#b4").attr("disabled","disabled");
+		
+	});
+$("#b5").click(function(){
+		$("#t1").attr("readonly","true");
+		$("#t1").css("background","#DEDEDE");
+
+
+	});
+
+
+$("#b6").click(function(){
+		$('#check').removeAttr('checked');
+
+	});
+	
+});
+</script>
+</head>
+<body>
+
+<div id="#target ">
+change Background on click<br>
+<input type="button" id="b1" value="changeBackground"/>	<br><br>
+
+<p id="change">change parent on click</p><br>
+
+<input type="button" id="b2" value="changeParent"/>	<br><br>
+
+create clone on click<br>
+
+<input type="button" id="b3" value="createClone"/>	<br>
+<p id="p1">change size on mouseover</p><br>
+Disable the button just by clicking on it <br>
+<input type="button" id="b4" value="disable"/>	<br>
+make a checkbox unchecked
+<input type="checkbox" id="check"><br>
+<input type="button" id="b6" value="unCheck"/><br>
+<br>
+
+</div>
+<div id="target2">
+Make a text box read only<br>
+
+<input type="textbox" id="t1" />
+<input type="button" id="b5" value="makeReadOnly"/>	<br>
+</body>
+</html>

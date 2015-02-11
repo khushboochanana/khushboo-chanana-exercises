@@ -1,0 +1,86 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){
+	
+	var target=$('#b1');
+	target.animate({
+ 		width:target.width() * 2,
+ 		height:target.height() * 2}, 1000);
+	});
+	$("#b2").click(function(){
+	
+
+
+        alert($('#target').find('.child').size());
+	});
+
+		$("#b3").click(function(){
+	
+	var target = $('#replace');
+	target.html(target.html().replace('h1','h2'));
+         });
+
+$("#b7").click(function(){
+	
+	$('h1').replaceWith(function()
+	{
+	return $("</h2>").append($(this).contents());
+
+	});
+	});
+
+$("#b11").click(function(){
+	$("#target").empty();
+	});
+
+$("#b12").click(function(){
+	$("#target").children().not(".child").remove();
+	});
+
+});
+</script>
+</head>
+<body>
+<input type="button" id="b1" value="animate"/>	<br><br>
+<div class="main" style=" width:300px; height:300px;align:center; margin:0px auto; padding:20px">
+
+<input type="button" id="b2" value="count"/>	<br><br>
+<ul id="target">
+	<li class="child">commedies </li>
+		<ul>
+			<li><a href="#">As you Like It</a></li>
+			<li>All is Well That Ends well</li>
+			<li>A night to remember </li><br>
+		</ul>
+	<li > Romanctics </li>
+		<ul>
+			<li><a href="#">Can Love Happen Twice </a></li>
+			<li>I too had a Love Story</li>
+			<li>Love Happens Only Once </li><br>
+		</ul>
+	<li > Tragedies</li>
+		<ul>
+			<li><a href="#">Hamlet</a></li>
+			<li>Macbeth </li>
+			<li>Romeo And Juliet</li>
+		</ul>
+
+	
+</ul>
+<input type="button" id="b12" value="RemoveExceptLi"/>	<br><br>
+</div>
+<h1 id="get"> in h1 heading</h1>
+<h2> in h2 heading</h2>
+<input type="button" id="b3" value="replace"/>	<br><br>
+<h1 id="replace"> replace  h1 to h2 </h1>
+
+<input type="button" id="b11" value="empty"/>	<br><br>
+
+<input type="button" id="b7" value="change"/>	<br><br>
+
+
+<body/>
+<html/>

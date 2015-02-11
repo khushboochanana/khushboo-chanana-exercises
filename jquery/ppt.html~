@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+
+$(document).ready(function(){
+alert(alert(jQuery('p').text())+"heyyyyy");
+$("div").css("background","#ddd");
+$('p').css("color","cyan");
+$("ul#menu>li").css("background","#feeeee");
+alert("oyyyyyy");
+jQuery('ul li:first').css("color","#aaaaaa");
+jQuery('ul li:eq(1)').css("color","#eheheh");;
+jQuery('ul li:last').css("color","#fhfhfh");;
+});
+</script>
+</head>
+<body>
+
+<div style="width: 200 ;height: 200; border :1px solid">
+
+<p>hiiiiiiiii Guys </p>
+</div>
+<ul id="menu">
+
+	<li>first</li>
+	<li>second</li>
+	<li>third</li>
+</ul>
+
+
+</body>
+</html>

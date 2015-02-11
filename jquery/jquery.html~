@@ -1,0 +1,79 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){
+	
+	var target=$('#b1');
+	target.animate({
+ 		width:target.width() * 2,
+ 		height:target.height() * 2}, 1000);
+	});
+	$("#b2").click(function(){
+	
+
+
+        alert($('#target').find('.child').size());
+	});
+
+		$("#b3").click(function(){
+	
+	var target = $('#replace');
+	target.html(target.html().replace('h1','h2'));
+         });
+
+$("#b7").click(function(){
+	
+	var target = $('#get');
+	var html = target.html();
+	html = html.replace('blink',"$&".blink());
+	html=html.replace('bold',"$&".bold());
+		html = html.replace('strike',"$&".strike());
+	target.html(html);
+         });
+});
+</script>
+</head>
+<body>
+<input type="button" id="b1" value="animate"/>	<br><br>
+<div class="main" style=" width:300px; height:300px;align:center; margin:0px auto; padding:20px">
+
+<input type="button" id="b2" value="count"/>	<br><br>
+<ul id="target">
+	<li class="child">commedies </li>
+		<ul>
+			<li><a href="#">As you Like It</a></li>
+			<li>All is Well That Ends well</li>
+			<li>A night to remember </li><br>
+		</ul>
+	<li class="child"> Romanctics </li>
+		<ul>
+			<li><a href="#">Can Love Happen Twice </a></li>
+			<li>I too had a Love Story</li>
+			<li>Love Happens Only Once </li><br>
+		</ul>
+	<li class="child"> Tragedies</li>
+		<ul>
+			<li><a href="#">Hamlet</a></li>
+			<li>Macbeth </li>
+			<li>Romeo And Juliet</li>
+		</ul>
+
+	
+</ul>
+</div>
+<h1> in h1 heading</h1>
+<h2> in h2 heading</h2>
+<input type="button" id="b3" value="replace"/>	<br><br>
+<h1 id="replace"> replace  h1 to h2 </h1>
+
+<input type="button" id="b7" value="remove "/>	<br><br>
+<div id="get" style=" width:100px; height:100px; border: 1px solid " >
+
+
+
+</div>
+
+<body/>
+<html/>

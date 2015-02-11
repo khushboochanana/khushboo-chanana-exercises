@@ -1,0 +1,104 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+
+	$("#tt").hover(function(){
+		$(this).width(100);
+
+		$(this).height(100);
+	});
+	$("#b1").click(function(){
+		$("td:eq(1)").css("color","blue");
+	});
+
+	$("#b2").click(function(){
+		$("td:lt(1)").css("color","red");
+	});
+
+	$("#b3").click(function(){
+		$("td:gt(1)").css("color","green");
+	});
+
+	$("#b4").click(function(){
+		
+	        var rows = $("#tt tr");
+
+		rows.eq(0).insertAfter(rows.eq( 1));
+	
+	});
+
+	$("#b5").click(function(){
+		
+	         $('#select1 option').eq(2).attr("selected","selected");
+	});
+
+	$("#b6").click(function(){
+		
+	        $('#select1 option' ).filter(':odd').css('color' , 'red');
+	});
+$("#b7").click(function(){
+alert ("hello");
+	$("#tt  td").each(function(){
+
+var col=$(this);
+if(col.text()>5)
+col.css("background","pink");
+ 
+});
+});
+$("#b8").click(function(){
+alert("hiii");
+$('div').not('.parent').remove();
+
+});
+});
+	
+</script>
+</head>
+<body>
+
+increase in size on mouse hover<br> <br>
+
+<table id="tt" border="1">
+	<tr> 
+		<td>1</td>
+		<td>2</td>
+		<td>3</td>
+	</tr>
+	<tr> 
+		<td>6</td>
+		<td>8</td>
+		<td>9</td>
+	</tr>
+	<tr> 
+		<td>7</td>
+		<td>9</td>
+		<td>1</td>
+	</tr>
+</table>
+<div class="target">
+<input type="button" id="b1" value="eq() Filter"/>
+<input type="button" id="b2" value="lt() Filter"/>
+<input type="button" id="b3" value="gt() Filter"/>
+<input type="button" id="b7" value="changeColor"/>
+
+<input type="button" id="b4" value=" insert"/>	<br>
+
+</div>
+<select id= "select1">
+	<option > a1</option>
+	<option> a2</option>
+	<option>a3</option>
+</select>
+
+<input type="button" id="b5" value="select a3"/>
+<input type="button" id="b6" value="Alternate color"/>
+
+<div class="target" style="width: 200 ;height: 200; border :1px solid">
+</div>
+
+<input type="button" id="b8" value="removeBlankDiv"/>
+</body>
+</html>

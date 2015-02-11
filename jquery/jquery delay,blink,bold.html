@@ -1,0 +1,33 @@
+<html>
+<head>
+<script src="jquery-1.9.0.js"></script>
+<script>
+$(document).ready(function(){
+	$("#b1").click(function(){
+		$("body").css("background","#33f");
+	
+		$("div.div1").slideUp(300).delay(800).fadeIn(400);
+		$("div.div2").slideUp(300).fadeIn(400);
+	});
+$("#b2").click(function(){
+		$(".div1").fadeTo(100,0.1).fadeTo(200,1.0);
+	});
+
+$("#b3").click(function(){
+		$("#boldIt").css("font-weight","bold");
+	});
+
+});
+</script>
+</head>
+<body>
+<input type="button" id="b1" value="delay"/>	<br><br>
+<input type="button" id="b2" value="blink"/>	<br><br>
+
+<div class="div1" style=" height:100; width: 100; border : 1px solid ;background :#3f3 ">Jquery</div>
+<div class="div2" style=" height:100; width: 100; border : 1px solid; background: pink "> Delay</div>
+<input type="button" id="b3" value="boldIt"/>	<br><br>
+<p id="boldIt"  >  make it bold </p>
+
+</body>
+</html>
